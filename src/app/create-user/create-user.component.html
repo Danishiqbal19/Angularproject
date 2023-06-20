@@ -1,0 +1,33 @@
+<h1 class="mb-2">form</h1>
+<div class="container w-50">
+    <form [formGroup]="userForm" (ngSubmit)="submit()">
+        <div class="mb-3">
+          <label for="id1" class="form-label">User name</label>
+          <input type="text" class="form-control" id="id1" formControlName="UserName" >
+   
+        </div>
+        <div class="mb-3">
+            <label for="id2" class="form-label">phone no</label>
+            <input type="text" class="form-control" id="id2" formControlName="PhoneNo" >
+     
+          </div>
+          <div class="mb-3">
+            <label for="id3" class="form-label">email id</label>
+            <input type="text" class="form-control" id="id3" formControlName="mailid">
+     
+          </div>
+        <div class="mb-3">
+          <label for="id4" class="form-label">Gender</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="id4"  value="male" formControlName="Gender">
+            <label class="form-check-label" for="inlineCheckbox1">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="id5"  value="female" formControlName="Gender">
+            <label class="form-check-label" for="inlineCheckbox2">Female</label>
+          </div>
+        </div>
+      
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
